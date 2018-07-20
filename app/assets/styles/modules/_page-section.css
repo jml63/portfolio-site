@@ -1,0 +1,23 @@
+.page-section {
+    padding: 1.1rem 0;
+
+    @mixin atSmall {
+        padding: 4rem 0;
+    }
+
+    &--lightblue {
+        background-color: $lightestBlue;
+    }
+
+    &--darkblue {
+        background-color: $mediumBlue;
+        color: #fff;
+    }
+
+    &--centered-img {
+        margin-left: auto;
+        margin-right:auto;
+        border-radius: 50%;
+        display: block;
+    }
+}

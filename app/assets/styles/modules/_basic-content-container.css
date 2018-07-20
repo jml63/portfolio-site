@@ -1,0 +1,11 @@
+.basic-content-container {
+
+    p {
+        line-height: 1.25;
+        margin: 1.8rem 0;
+
+        @mixin atSmall {
+            font-size: 1.125rem;
+        }
+    }
+}
