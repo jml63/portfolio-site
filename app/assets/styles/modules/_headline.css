@@ -15,4 +15,18 @@
     &--no-top-margin {
         margin-top: 0;
     }
+
+    &--small {
+        font-weight: 700;
+        font-size: 1.1rem;
+
+        @mixin atSmall {
+            font-size: 1.4rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: $darkBlue;
+        }
+    }
 }

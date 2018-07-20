@@ -2,22 +2,50 @@
     padding: 1.1rem 0;
 
     @mixin atSmall {
-        padding: 4rem 0;
+        padding: 3.5rem 0;
     }
 
-    &--lightblue {
-        background-color: $lightestBlue;
+    &--light {
+        color: #333;
+
+        a {
+            color: #333;
+        }
+
+        a:visited {
+            color: #333;
+        }
+
+        a:hover {
+            color: $mainOrange;
+        }
     }
 
     &--darkblue {
         background-color: $mediumBlue;
         color: #fff;
+
+        a {
+            color: #fff;
+        }
+
+        a:visited {
+            color: #fff;
+        }
+
+        a:hover {
+            color: $mainOrange;
+        }
     }
 
-    &--centered-img {
+    &--portrait-img {
         margin-left: auto;
         margin-right:auto;
         border-radius: 50%;
+        border-style: solid;
+        border-color: $mediumBlue;
+        border-width: 4px;
         display: block;
+        max-width: 250px;
     }
 }

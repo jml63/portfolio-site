@@ -466,7 +466,7 @@ img {
 }
 
 a {
-    color: #d59541;
+    font-weight: 700;
 }
 
 .jumbotron {
@@ -580,7 +580,7 @@ a {
 .wrapper {
     padding-left: 18px;
     padding-right: 18px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -593,24 +593,52 @@ a {
 @media (min-width: 530px) {
 
 .page-section {
-        padding: 4rem 0
+        padding: 3.5rem 0
 }
     }
 
-.page-section--lightblue {
-        background-color: #DEE3ED;
+.page-section--light {
+        color: #333;
     }
+
+.page-section--light a {
+            color: #333;
+        }
+
+.page-section--light a:visited {
+            color: #333;
+        }
+
+.page-section--light a:hover {
+            color: #d59541;
+        }
 
 .page-section--darkblue {
         background-color: #5A6784;
         color: #fff;
     }
 
-.page-section--centered-img {
+.page-section--darkblue a {
+            color: #fff;
+        }
+
+.page-section--darkblue a:visited {
+            color: #fff;
+        }
+
+.page-section--darkblue a:hover {
+            color: #d59541;
+        }
+
+.page-section--portrait-img {
         margin-left: auto;
         margin-right:auto;
         border-radius: 50%;
+        border-style: solid;
+        border-color: #5A6784;
+        border-width: 4px;
         display: block;
+        max-width: 250px;
     }
 
 .headline {
@@ -634,6 +662,23 @@ a {
 .headline--no-top-margin {
         margin-top: 0;
     }
+
+.headline--small {
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+@media (min-width: 530px) {
+
+.headline--small {
+            font-size: 1.4rem
+    }
+    }
+
+.headline--small a {
+            text-decoration: none;
+            color: #39445B;
+        }
 
 .row::after {
         content: "";
@@ -681,4 +726,22 @@ a {
 .basic-content-container p {
             font-size: 1.125rem
     }
+    }
+
+.basic-content-container--centered-text {
+        text-align: center;
+    }
+
+.basic-content-container--header {
+        font-weight: 700;
+    }
+
+.basic-content-container--img-shadow {
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+.icons i {
+        padding-right: 1rem;
+        padding-bottom: .5rem;
     }
