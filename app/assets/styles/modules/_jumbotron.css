@@ -28,7 +28,7 @@
         margin: .5em;
 
         @mixin atSmall {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
     }
 
@@ -38,7 +38,7 @@
         font-size: 1.8rem;
 
         @mixin atSmall {
-            font-size: 3.8rem;
+            font-size: 3.6rem;
         }
     }
 
@@ -47,6 +47,7 @@
         margin-top: .5em;
         margin-bottom: 2.4em;
         font-size: .8rem;
+        font-style: italic;
 
         @mixin atSmall {
             font-size: 1rem;

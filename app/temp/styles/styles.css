@@ -504,7 +504,7 @@ a {
 @media (min-width: 530px) {
 
 .jumbotron-text__title {
-            font-size: 2rem
+            font-size: 1.8rem
     }
     }
 
@@ -517,7 +517,7 @@ a {
 @media (min-width: 530px) {
 
 .jumbotron-text__subtitle {
-            font-size: 3.8rem
+            font-size: 3.6rem
     }
     }
 
@@ -526,6 +526,7 @@ a {
         margin-top: .5em;
         margin-bottom: 2.4em;
         font-size: .8rem;
+        font-style: italic;
     }
 
 @media (min-width: 530px) {
@@ -561,20 +562,33 @@ a {
     list-style-type: none;
     overflow: hidden;
     position: absolute;
-    top: .5rem;
+    z-index: 2;
+    width: 100%;
+    text-transform: uppercase;
 }
 
-.navigation-list {
-        display: inline;
-        margin-right: 1.8rem;
+.navigation ul {
+        text-align: center;
     }
 
-.navigation-link {
-        color: white;
+@media (min-width: 530px) {
+
+.navigation ul {
+            text-align: left
+    }
+    }
+
+.navigation li {
+        display: inline;
+        margin-right: 1.4rem;
+    }
+
+.navigation a {
         font-weight: 500;
+        color: white;
         text-decoration: none;
-        text-shadow: 1px 1px 0 rgba(0, 0, 0, .4);
-        font-size: 1.2rem;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        font-size: 1.1rem;
     }
 
 .wrapper {
@@ -737,7 +751,12 @@ a {
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
+.icons {
+    text-align: center;
+}
+
 .icons i {
         padding-right: 1rem;
+        padding-left: 1rem;
         padding-bottom: .5rem;
     }
