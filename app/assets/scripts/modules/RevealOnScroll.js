@@ -3,10 +3,18 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 
 class RevealOnScroll {
     constructor(els, offset) {
+        this.lazyImages = $(".lazyload");
         this.itemsToReveal = els;
         this.offsetVal = offset;
         this.hideInitially();
         this.createWaypoints();
+        this.refreshWaypoints();
+    }
+
+    refreshWaypoints() {
+       this.lazyImages.on('load', function() {
+            Waypoint.refreshAll();
+       });
     }
 
     hideInitially() {
