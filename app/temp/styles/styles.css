@@ -806,3 +806,17 @@ a {
 .icons--menu {
         color: #fff;
     }
+
+.reveal-item {
+    opacity: 0;
+    -webkit-transition: all .75s ease-out;
+    transition: all .75s ease-out;
+    -webkit-transform: scale(1.125);
+            transform: scale(1.125);
+}
+
+.reveal-item--is-visible {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
