@@ -1,14 +1,12 @@
 .navigation {
-    list-style-type: none;
-    overflow: hidden;
     position: absolute;
-    z-index: 2;
     width: 100%;
     text-transform: uppercase;
-    
 
     ul {
+        list-style-type: none;
         text-align: center;
+        overflow: hidden;
 
         @mixin atSmall {
             text-align: left;
@@ -17,7 +15,7 @@
 
     li {
         display: inline;
-        margin-right: 1.4rem;
+        margin-right: 20px;
     }
 
     a {
@@ -26,5 +24,38 @@
         text-decoration: none;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
         font-size: 1.1rem;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 18px;
+        right: 15px;
+        z-index: 4;
+
+        @mixin atSmall {
+            display: none;
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: -1;
+        opacity: 0;
+        transform: scale(1);
+        transition: all .5s ease-out;
+
+        @mixin atSmall {
+            opacity: 1;
+            z-index: 3;
+            transform: scale(1);
+        }
+
+        &--visible {
+            opacity: 1;
+            z-index: 3;
+            transform: scale(1);
+        }
     }
 }
