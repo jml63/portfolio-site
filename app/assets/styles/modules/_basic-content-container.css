@@ -1,7 +1,7 @@
 .basic-content-container {
 
     p {
-        line-height: 1.25;
+        line-height: 1.35;
         margin: 1.8rem 0;
 
         @mixin atSmall {
